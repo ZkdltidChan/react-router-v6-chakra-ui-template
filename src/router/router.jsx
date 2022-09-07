@@ -6,12 +6,14 @@ import NavBar from "../components/NavBar";
 import Login from "../pages/Login"
 import PageNotFound from "../pages/PageNotFound";
 import ContactUs from "../pages/ContactUs";
+import Signup from "../pages/Signup";
 export default function Router() {
     return (
         <Routes>
             {/* TODO: before login */}
             <Route element={<NavBar />}>
                 <Route path="/login" element={<Login />} />
+                <Route path="/signup" element={<Signup />} />
                 <Route path="/*" element={<PageNotFound />} />
             </Route>
             {/* after login */}
